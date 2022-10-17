@@ -5,14 +5,14 @@
 ### To run a background service do followings
 1. copy service-apps directory in you target OS environment (eg. Ubuntu Server)
 2. copy all files within services directory to /etc/systemd/system
-3. execute following commands sudo systemctrl enable name_of_service.service 
+3. execute following commands sudo systemctl enable name_of_service.service 
 4. sudo systemctl start name_of_service.service
 5. check status using sudo systemctl status name_of_service.service
 6. check log usng sudo journalctl -u name_of_service.service -f
 ### To write new service for new vendor
 1. make copy of any file from sevices directory
 2. change necessary file path for necessary .jar file to execute service for the particular service-app
-3. execute following commands sudo systemctrl enable name_of_service.service sudo systemctrl start name_of_service.service
+3. execute following commands sudo systemctl enable name_of_service.service sudo systemctl start name_of_service.service
 ### To compile source
 1. Required minimum JDK 1.8
 2. Intelij Community Edition (It will setup Maven automatically with IDE)
